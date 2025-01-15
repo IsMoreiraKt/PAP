@@ -1,0 +1,42 @@
+/* menu.css */
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  main table th, main table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  main table th {
+    background-color: #f4f4f4;
+  }
+  
+  .delete-btn, .edit-btn {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-btn {
+    background-color: #ff5c5c;
+    color: white;
+  }
+  
+  .edit-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff0000;
+  }
+  
+  .edit-btn:hover {
+    background-color: #45a049;
+  }
+  
