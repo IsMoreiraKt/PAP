@@ -8,24 +8,32 @@ unset($_SESSION['login_error']);
 
 <head>
   <meta charset="UTF-8" />
-  <title>Login</title>
+  <title>Nutrichef Login</title>
   <link rel="stylesheet" href="../css/auth.css">
 </head>
 
 <body>
-  <h1>Login</h1>
-  <?php if ($error_message): ?>
-    <p style="color: red;"><?php echo htmlspecialchars($error_message); ?></p>
-  <?php endif; ?>
-  <form action="process_login.php" method="POST">
-    <label for="username">Usuário ou E-mail:</label>
-    <input type="text" name="username" id="username" required />
-    <br><br>
-    <label for="password">Senha:</label>
-    <input type="password" name="password" id="password" required />
-    <br><br>
-    <button type="submit">Entrar</button>
-  </form>
+  <div class="center">
+    <h1>Login</h1>
+    <?php if ($error_message): ?>
+      <p style="color: red;"><?php echo htmlspecialchars($error_message); ?></p>
+    <?php endif; ?>
+    <form action="process_login.php" method="POST">
+      <div class="txt_field">
+        <input type="text" required>
+        <label>Nome de usuário</label>
+      </div>
+      <div class="txt_field">
+        <input type="password" required>
+        <label>Senha</label>
+      </div>
+      <div class="pass">Esqueceu a senha?</div>
+      <input type="submit" value="Login">
+      <div class="sginup_link">
+        Não tem conta? <a href="#">Registre-se</a>
+      </div>
+    </form>
+  </div>
 </body>
 
 </html>
