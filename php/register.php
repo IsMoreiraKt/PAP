@@ -4,23 +4,33 @@
 <head>
   <meta charset="UTF-8" />
   <title>Registro</title>
-  <link rel="stylesheet" href="../css/auth.css">
+  <link rel="stylesheet" href="../css/register.css">
 </head>
 
 <body>
-  <h1>Registro</h1>
-  <form action="process_register.php" method="POST">
-    <label for="username">Usuário:</label>
-    <input type="text" name="username" id="username" required />
-    <br><br>
-    <label for="email">E-mail:</label>
-    <input type="email" name="email" id="email" required />
-    <br><br>
-    <label for="password">Senha:</label>
-    <input type="password" name="password" id="password" required />
-    <br><br>
-    <button type="submit">Registrar</button>
-  </form>
+  <div class="center">
+    <h1>Registre-se</h1>
+    <form action="process_register.php" method="POST">
+      <div class="txt_field">
+        <input type="text" name="username" required>
+        <span></span>
+        <label>Nome de usuário:</label>
+      </div>
+      <div class="txt_field">
+        <input type="email" name="email" required>
+        <span></span>
+        <label>E-mail:</label>
+      </div>
+      <div class="txt_field">
+        <input type="password" name="password" required>
+        <span></span>
+        <label>Senha:</label>
+      </div>
+        <input type="submit" value="Registre-se">
+        <div class="signup_link">
+          <a href="../php/login.php">Já tem conta?</a>
+        </div>
+    </form>
+  </div>
 </body>
-
 </html>

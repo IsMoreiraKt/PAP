@@ -32,7 +32,7 @@ unset($_SESSION['login_error']);
       <div class="pass">Esqueceu a senha?</div>
       <input type="submit" value="Login">
       <div class="signup_link">
-        Não tem conta? <a href="#">Registre-se</a>
+        Não tem conta? <a href="../php/register.php">Registre-se</a>
       </div>
     </form>
 
