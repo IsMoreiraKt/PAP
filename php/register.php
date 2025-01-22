@@ -28,7 +28,7 @@
       </div>
         <input type="submit" value="Registre-se">
         <div class="signup_link">
-          <a href="../php/login.php">Já tem conta?</a>
+          Já tem conta? <a href="../php/login.php">Login</a>
         </div>
     </form>
   </div>
