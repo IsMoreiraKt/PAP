@@ -2,20 +2,17 @@
 session_start();
 require_once '../php/db_connection.php';
 
-if (!isset($_SESSION['username']) || $_SESSION['is_admin'] != 1) {
-    header("Location: index.php");
-    exit;
+if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 2) {
+    die("Acesso negado! Apenas o Super Administrador pode excluir usuários.");
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['user_id'])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['user_id'])) {
     $user_id = $_POST['user_id'];
 
-    $delete_query = $conn->prepare("DELETE FROM users WHERE id = :id");
-    $delete_query->execute(['id' => $user_id]);
+    $stmt = $conn->prepare("DELETE FROM users WHERE id = :id AND is_admin != 2");
+    $stmt->execute(['id' => $user_id]);
 
-    header("Location: menu.php");
-    exit;
-} else {
-    echo "ID inválido.";
+    header("Location: ../php/s_admin_menu.php");
     exit;
 }
+?>
