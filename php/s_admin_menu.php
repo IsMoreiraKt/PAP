@@ -30,15 +30,45 @@
 
         <div class="menu-bar">
             <div class="menu">
-            <li class="search-box">
-                <i class='bx bx-search-alt-2 icon'></i>
-                    <input type="search" placeholder="Pesquisa">
-            </li>
+                <li class="search-box">
+                    <i class='bx bx-search-alt-2 icon'></i>
+                        <input type="search" placeholder="Pesquisa">
+                </li>
                 <ul class="menu-link">
                     <li class="nav-link">
                         <a href="#">
-                        <i class='bx bx-home'></i>
-                        <span class="text nav-text">Dashboard</span>
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Usuários</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-book-heart icon'></i>
+                            <span class="text nav-text">Consultas</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-images icon'></i>
+                            <span class="text nav-text">Gerenciamento de imagens</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notificações</span>
                         </a>
                     </li>
                 </ul>

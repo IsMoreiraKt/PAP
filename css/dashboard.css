@@ -15,7 +15,7 @@
     --toggle-color: #DDD;
     --text-color: #707070;
     
-    --tran-03: all 0.2s ease;
+    --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.4s ease;
     --tran-05: all 0.5s ease;
@@ -66,7 +66,8 @@ body {
 
 .sidebar li .icon,
 .sidebar li .text {
-    color: var(--text-color)
+    color: var(--text-color);
+    transition: var(--tran-02);
 }
 
 .sidebar header {
@@ -126,8 +127,19 @@ header .image-text .header-text {
 
 .sidebar li a {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     text-decoration: none;
     border-radius: 6px;
+    transition: var(--tran-04);
+}
+
+.sidebar li a:hover {
+    background: var(--primary-color);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+    color: var(--sidebar-color);
 }
