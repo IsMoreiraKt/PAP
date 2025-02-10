@@ -36,19 +36,19 @@
                 </li>
                 <ul class="menu-link">
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#" id="homeLink">
                             <i class='bx bx-home icon'></i>
                             <span class="text nav-text">Home</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#" id="usersLink">
                             <i class='bx bx-user icon'></i>
                             <span class="text nav-text">Usuários</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#" id="consultasLink">
                             <i class='bx bx-book-heart icon'></i>
                             <span class="text nav-text">Consultas</span>
                         </a>
@@ -90,8 +90,63 @@
     </nav>
 
     <section class="home">
+        <!-- Título da Dashboard -->
         <div class="text">Dashboard</div>
+
+        <!-- Conteúdo da Home (exibido por padrão) -->
+        <div class="dashboard-content" id="homeContent">
+            <!-- Cards de Visão Geral -->
+            <div class="overview-cards">
+                <div class="card">
+                    <i class='bx bx-calendar-check'></i>
+                    <h3>Consultas Hoje</h3>
+                    <p>15</p>
+                </div>
+                <div class="card">
+                    <i class='bx bx-user'></i>
+                    <h3>Total de Usuários</h3>
+                    <p>320</p>
+                </div>
+                <div class="card">
+                    <i class='bx bx-time'></i>
+                    <h3>Consultas Pendentes</h3>
+                    <p>5</p>
+                </div>
+                <div class="card">
+                    <i class='bx bx-group'></i>
+                    <h3>Novos Usuários (7 dias)</h3>
+                    <p>12</p>
+                </div>
+            </div>
+
+            <!-- Gráficos e Estatísticas -->
+            <div class="charts">
+                <div class="chart-container">
+                    <h3>Consultas por Mês</h3>
+                    <canvas id="consultasChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Distribuição de Planos</h3>
+                    <canvas id="planosChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conteúdo de Usuários (inicialmente oculto) -->
+        <div class="dashboard-content hidden" id="usersContent">
+            <h2>Gestão de Usuários</h2>
+            <p>Aqui você pode gerenciar os usuários do sistema.</p>
+            <!-- Adicione tabelas, formulários, etc. -->
+        </div>
+
+        <!-- Conteúdo de Consultas (inicialmente oculto) -->
+        <div class="dashboard-content hidden" id="consultasContent">
+            <h2>Gestão de Consultas</h2>
+            <p>Aqui você pode gerenciar as consultas agendadas.</p>
+            <!-- Adicione tabelas, calendários, etc. -->
+        </div>
     </section>
+
     <script src="../js/dashboard.js"></script>
 </body>
 </html>
