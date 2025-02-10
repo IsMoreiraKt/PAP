@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <nav class="sidebar">
+    <nav class="sidebar close">
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="logo.png" alt="logo">
+                    <img src="../images/logo.png" alt="logo">
                 </span>
 
                 <div class="text header-text">
@@ -56,13 +56,7 @@
                     <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-images icon'></i>
-                            <span class="text nav-text">Gerenciamento de imagens</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-home icon'></i>
-                            <span class="text nav-text">Dashboard</span>
+                            <span class="text nav-text">Gestão de imagens</span>
                         </a>
                     </li>
                     <li class="nav-link">
@@ -73,9 +67,31 @@
                     </li>
                 </ul>
             </div>
+            <div class="bottom-content">
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
         </div>
     </nav>
+
+    <section class="home">
+        <div class="text">Dashboard</div>
+    </section>
     <script src="../js/dashboard.js"></script>
 </body>
-
 </html>
