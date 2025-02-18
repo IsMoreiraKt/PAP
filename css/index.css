@@ -35,3 +35,172 @@
 .hero .cta-link:hover {
   background-color: #0056b3;
 }
+
+/* CSS do DeepSeek */
+/* Seção de Destaques */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.feature {
+  text-align: center;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Seção de Depoimentos */
+.testimonials {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  border-left: 4px solid #007bff;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-size: 18px;
+  color: #555;
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Seção de Blog */
+.blog-preview {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.blog-preview h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-posts {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.post {
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.post a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #007bff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar, .auth-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .features, .blog-posts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature, .post {
+    margin-bottom: 20px;
+  }
+}

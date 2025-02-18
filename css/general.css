@@ -52,4 +52,31 @@ body {
     background-color: #000;
     color: #fff;
   }
-  
+
+  /* CSS do DeepSeek */ 
+  /* Melhorias no Header */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.logo::before {
+  content: "🍎"; /* Ícone de maçã (ou outro ícone relacionado a nutrição) */
+  margin-right: 10px;
+}
+
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.menu a:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
